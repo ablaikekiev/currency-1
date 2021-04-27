@@ -1,0 +1,111 @@
+@import "fonts/stylesheet.css";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 720px;
+    margin: auto;
+}
+.header{
+    padding-top: 20px;
+    background: #FFE782;
+    height: 111px;
+}
+.header__title{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 25px;
+    color: #2B2D33;
+    margin-left: 24px;
+}
+.header-flexBox{
+    display: flex;
+    overflow: auto;
+    justify-content: space-between;
+}
+.header-flexBox__items{
+    width: 90px;
+    height: 50px;
+    padding: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    background: #FFE782;
+    outline: none;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    margin-top: 15px;
+}
+.main{
+    padding: 26px 0 24px;
+    background: #F2F2F2;
+}
+.main-flex{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 24px;
+}
+.main__currency{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    margin-left: 5px;
+    color: #000;
+}
+.main-flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 26px;
+}
+.main-flexBox__items{
+    width: 327px;
+    height: 180px;
+    padding: 20px;
+    padding-right: 100px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(157, 157, 157, 0.16);
+    border-radius: 12px;
+    margin: 16px;
+}
+.main__text{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.0171429px;
+
+    color: #2B2D33;
+}
+.main__content{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.0342857px;
+
+    color: #2B2D33;
+}
+.button-flex{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.button__first{
+    padding: 4px 30px;
+    margin: 10px;
+ }
+
+.button__second{
+    padding: 4px 30px;
+    margin: 10px;
+}
