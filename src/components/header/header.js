@@ -1,16 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {BrowserRouter} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {updateCurrent} from "../../redux/reducers/currencies";
 
-const Header = () => {
+const Header = ({time}) => {
     const currencies = useSelector((s) => s.currencies.currencies);
     const current = useSelector((s) => s.currencies.current);
     const dispatch = useDispatch();
+
     return (
         <BrowserRouter>
             <header className='header'>
-                <h1 className='header__title'>Курс EUR на 2020.01.19</h1>
+                <div className="header-title">
+                    <h1 className='header__title'>Курс валют на {time}</h1>
+
+
+                </div>
                 <div className='header-flexBox'>
                     {
                         Object.keys(currencies).map((item) => {

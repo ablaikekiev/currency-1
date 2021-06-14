@@ -17,7 +17,7 @@ const Main = ({input, setInput}) => {
     const [firstIndex, setFirstIndex] = useState(0);
     const [lastIndex, setLastIndex] = useState(4);
     const increaseHandler = () => {
-        if (firstIndex < 30 && lastIndex < 33){
+        if (firstIndex < 164 && lastIndex < 167){
             setFirstIndex(firstIndex + 3);
             setLastIndex(lastIndex + 3)
         }
@@ -31,7 +31,7 @@ const Main = ({input, setInput}) => {
     return (
         <main className='main'>
             <form className='main-flex' onSubmit={formHandler}>
-                <input type="text" placeholder='Введите количество купюр' onChange={() => inputHandler} value={input} required/>
+                <input type="text" className='main__input' placeholder='Введите количество купюр' onChange={() => inputHandler} value={input} required/>
                 <button type='submit' className="main__currency">Submit</button>
             </form>
             <div className="main-flexBox">
@@ -48,7 +48,7 @@ const Main = ({input, setInput}) => {
             </div>
             <div className="button-flex">
                 <button type='button' className="button__first" onClick={decreaseHandler} disabled={firstIndex === 0 ? 'disable' : ''}>Назад</button>
-                <button type='button' className="button__second" onClick={increaseHandler} disabled={firstIndex === 30 ? 'disable' : ''}>Далее</button>
+                <button type='button' className="button__second" onClick={increaseHandler} disabled={firstIndex === 165 ? 'disable' : ''}>Далее</button>
             </div>
         </main>
     );
